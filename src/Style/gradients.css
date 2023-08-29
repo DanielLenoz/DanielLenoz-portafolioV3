@@ -1,0 +1,40 @@
+.diamond {
+  background:
+    linear-gradient(
+        to bottom right,
+        #00fff0 0%,
+        rgba(0, 163, 255, 0.8) 27%,
+        rgba(0, 41, 255, 0) 50%
+      )
+      bottom right / 50% 50% no-repeat,
+    linear-gradient(
+        to bottom left,
+        #00fff0 0%,
+        rgba(0, 163, 255, 0.8) 27%,
+        rgba(0, 41, 255, 0) 50%
+      )
+      bottom left / 50% 50% no-repeat,
+    linear-gradient(
+        to top left,
+        #00fff0 0%,
+        rgba(0, 163, 255, 0.8) 27%,
+        rgba(0, 41, 255, 0) 50%
+      )
+      top left / 50% 50% no-repeat,
+    linear-gradient(
+        to top right,
+        #00fff0 0%,
+        rgba(0, 163, 255, 0.8) 27%,
+        rgba(0, 41, 255, 0) 50%
+      )
+      top right / 50% 50% no-repeat;
+}
+
+.dark .sunlight {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 230, 0, 0.46) 0%,
+    rgba(245, 70, 1, 0.28) 53.13%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
