@@ -1,0 +1,402 @@
+[
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/curso-vite-js.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de vite js"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/npm-gestion-paquetes-dependecias-JS.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de npm gestion paquetes dependecias JS"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/Performance-Usabilidad-API-JS.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de Performance Usabilidad API JS"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/practica-API-rest-JS.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de practica API rest JS"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/consumo-API-rest-javascript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de consumo-API rest javascript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/asincronismo-javascript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de asincronismo con javascript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/business-travels.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de business travels"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-expression-time-quantity.webp",
+    "certificatesId": "inglish",
+    "altDescription": "B1 expression time quantity"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/clean-code-javascript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de cleand code"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/design/figma-prototipado-interfaces.webp",
+    "certificatesId": "design",
+    "altDescription": "curso de figma prototipado y interfaces"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/design/desarrollo-web-diseñadores-basico.webp",
+    "certificatesId": "design",
+    "altDescription": "curso de desarrollo web para diseñadores basico"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/economia-comportamiento.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso de ecomia del comportamiento"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/introduccion-economia-conductual.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso de introduccion de economia conductual"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/manejo-creditos-deudas.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso de manejo de creditos y deudas"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/plan-ahorro-personal.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso de plan de ahorro personal"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/debugging-devtools.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de debugging devtools"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/javaScript-engine-V8-navegador.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de javascript engine v8 navegador"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/manipulacion-de-arrays-en-javaScript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de manipulacion de arrays en javaScript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/programacion-orientada-a-objetos-con-javaScript2.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de progrmacion orientada a objetos con javaScript2"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/programacion-orientada-a-objetos-con-javascript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de programacion orientada a objetos con javascript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/programacion-orientada-a-objetos.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de programacion orientada a objetos"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/closures-y-scope-en-javascript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de closures y scope en javascript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/practico-JavaScript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de practico de javaScript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/basico-Javascript.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de basico javascript"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/animaciones-css.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de animaciones css"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/transform-transition-css.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de transform transition css"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/diseño-web-con-css-grid-flexbox.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de diseño web con css grid flexbox"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/css-grid-layout.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de css grid layout"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/maquetacion-en-css.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de maquetacion en css"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/css-grid-basico.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de css grid basico"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/maquetacion-mobile-first.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de maquetacion mobile first"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/practico-de-html-y-css.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de practivo de html y css"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/definitivo-de-html-y-css.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de definitivo de html y css "
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/practico-de-frontend-developer.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de practico de frontend developer"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/frontend-developer.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de frontend developer"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/git-github.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de git y github"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/introduccion-a-la-terminal-y-linea-de-comandos.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de terminal y linea de comandos"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/prework-windows.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de prework windows"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/fundamentos-de-ingenieria-de-software.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de fundamentos de ingenieria de software"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/introduccion-a-la-web.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de introduccion a la web"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-requests-and-reflexive-pronouns.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 request and reflexive pronouns"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-prefixes-and-compound-adjectives.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 prefixes and compound adjectives"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-adjectives-and-passive-voice.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 adjectives and passive voice"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-relative-pronouns-and-clauses.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 relative pronouns and clauses"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-present-perfect-and-prepositions.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 present perfect and prepositions"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-infinitive-and-transitive-verbs.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 infinitive and transitive verbs"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-connectors-and-preferences.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 connectors and preferences"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/B1-expressions-of-time-and-quantity.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de B1 expressions of time and quantity"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/shopping.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de shopping"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/pronunciation.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de pronunciation"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/for-networking.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de for networking"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/basic-writing.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de basic writing"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/vocabulary-and-expressions.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de vocabulary and expressions"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/unsoled-mysteries.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de unsoled mysteries"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/descriptions-and-comparatives.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de descriptions and comparatives"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-past-experiences-and-future-intentions.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 past experiences and future intentions"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-conjunctions-and-superlatives.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 conjunctions and superlatives"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-infinitive-present-continuous.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 infinitive present continous"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-present-continuous-and-prepositions.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 present continuos and prepositions"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-quantities-and-gerunds.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 quantities and gerunds"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-adverbs-and-nouns.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 adverbs and nouns"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-articles-and-model-verbs.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 articles and model verbs"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A2-questions-and-answers.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A2 questions and answers"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A1-dates,times-and-simple-expresiones.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A1 dates, times and simple expresiones"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/work-elements-expressions.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de work elements and expressions"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/workshop-for-beginners.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de workshop for beginners"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A1-for-beginners.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A1 for beginners"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/inglish/A1-present-simple-and-common-vocabulary.webp",
+    "certificatesId": "inglish",
+    "altDescription": "curso de A1 present simple and common vocabulary"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/crear-un-presupuesto-personal.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso crear un presupuesto personal"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/presupuesto-flujo-caja.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso presupuesto y flujo de caja"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/finance-personales.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso finance personales"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/finance/introduccion-a-educacion-financiera.webp",
+    "certificatesId": "finance",
+    "altDescription": "curso introduccion a educacion financiera"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/plus/marca-personal.webp",
+    "certificatesId": "plus",
+    "altDescription": "curso marca personal"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/plus/fundamentos-de-matematicas.webp",
+    "certificatesId": "plus",
+    "altDescription": "curso fundamentos de matematicas"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/plus/optimizacion-perfil-de-linkedin.webp",
+    "certificatesId": "plus",
+    "altDescription": "curso optimizacion perfil de linkedin"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/plus/estrategias-contenido-linkedin.webp",
+    "certificatesId": "plus",
+    "altDescription": "curso estrategias de contenido para linkedin"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/plus/creacion-portafolio-cv.webp",
+    "certificatesId": "plus",
+    "altDescription": "curso creacion de portafolio y CV"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/plus/pentateuco.webp",
+    "certificatesId": "plus",
+    "altDescription": "curso pentateuco"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/design/sistemas-de-diseño.webp",
+    "certificatesId": "design",
+    "altDescription": "curso sistemas de diseño"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/design/diseño-para-programadores.webp",
+    "certificatesId": "design",
+    "altDescription": "curso diseño para programadores"
+  }
+]
