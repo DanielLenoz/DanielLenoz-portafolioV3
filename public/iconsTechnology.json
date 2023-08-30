@@ -1,0 +1,38 @@
+[
+    {
+        "iconsTechnology": "./assets/icons/technology/html.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/css.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/js.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/React.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/tailwind.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/vite.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/npm.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/Nodejs.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/Git.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/github.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/vsCode.svg"
+    },
+    {
+        "iconsTechnology": "./assets/icons/technology/figma.svg"
+    }
+]
