@@ -15,10 +15,10 @@ function Footer() {
         puede ver
       </p>
       <ul className="font-roboto my-16 grid gap-7 text-base lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:my-8 lg:gap-3 lg:text-lg">
-        {routes.map((routes) => {
+        {routes.map((routes, index) => {
           return (
             <MuneList
-              key={routes.to}
+              key={index}
               routes={routes}
               activeStyle={activeStyle}
               onClick={() => window.scrollTo(0, 0)}

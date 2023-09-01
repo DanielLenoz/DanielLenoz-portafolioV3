@@ -8,9 +8,9 @@ import '../Style/gradients.css'
 function ProjectsCards({ projectsData }) {
   return (
     <section className="grid justify-center gap-5 ">
-      {projectsData.map((data) => (
+      {projectsData.map((data, index) => (
         <section
-          key={data.title}
+          key={index}
           className="group relative h-[359px] w-[341px] overflow-hidden rounded-xl"
         >
           <section className="relative">
@@ -37,7 +37,6 @@ function ProjectsCards({ projectsData }) {
                 <PiShareBold className="h-12 w-12 fill-slate-100" />
               </Link>
             </section>
-           
           </article>
 
           <section className="absolute bottom-0 z-10 h-auto w-[100vw] bg-slate-900">

@@ -1,9 +1,9 @@
 import React from 'react'
 import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri'
-import { NavLink } from 'react-router-dom'
 import { usePortafolio } from '../Hooks/usePortafolio'
+import { NavLink } from 'react-router-dom'
 import logoAzul from '../../public/assets/icons/logo/logo-azul.svg'
-import logorojo from '../../public/assets/icons/logo/logo-rojo.svg'
+import logorojo from '../../public/assets/icons//logo/logo-rojo.svg'
 import '../Style/animation.css'
 import '../Style/gradients.css'
 
@@ -35,11 +35,11 @@ function Menu() {
         </section>
 
         <section className="z-10 hidden bg-slate-100 dark:bg-slate-900 lg:grid">
-          <ul className="font-carter flex gap-7 text-2xl">
-            {routes.map((routes) => {
+          <ul className="flex gap-7 font-carter text-2xl">
+            {routes.map((routes, index) => {
               return (
                 <MuneList
-                  key={routes.to}
+                  key={index}
                   routes={routes}
                   activeStyle={activeStyle}
                 />
@@ -52,11 +52,11 @@ function Menu() {
       {!!menuActive && (
         <section className="relative z-10 grid h-screen justify-center bg-slate-100 dark:bg-slate-900">
           <div className="diamond scal sunlight absolute h-44 w-40"></div>
-          <ul className="font-carter my-32 grid gap-1 text-2xl">
-            {routes.map((routes) => {
+          <ul className="my-32 grid gap-1 font-carter text-2xl">
+            {routes.map((routes, index) => {
               return (
                 <MuneList
-                  key={routes.to}
+                  key={index}
                   routes={routes}
                   activeStyle={activeStyle}
                   onClick={() => (toggleMenu(), window.scrollTo(0, 0))}
