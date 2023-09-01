@@ -1,3 +1,21 @@
+.dark .gradient-leer-rojo,
+.gradient-hablemos-rojo {
+  background: linear-gradient(to bottom, #f5af19, #f12711);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-leer,
+.gradient-hablemos-azul {
+  background: linear-gradient(0deg,
+      #0029ff 0%,
+      #00a3ff 62.18%,
+      rgba(0, 255, 240, 0.71) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .diamond {
   background:
     linear-gradient(
@@ -41,4 +59,7 @@
 
 .gradient-Card {
   background: rgba(0, 0, 0, 0.51);
+}
+.gradient-contact {
+  background: rgba(45, 51, 73, 0.49);
 }
