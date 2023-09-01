@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CertificateCarousel() {
+function CertificateCarousel({ dataCertificates }) {
   return <p>CertificateCarousel</p>
 }
 

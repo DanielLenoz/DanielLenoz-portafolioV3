@@ -1,29 +1,29 @@
 import React from 'react'
-import { RiShakeHandsFill } from 'react-icons/ri'
 import { ImLinkedin2, ImGithub, ImDownload2, ImSpinner9 } from 'react-icons/im'
+import { RiShakeHandsFill } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 import { usePortafolio } from '../Hooks/usePortafolio'
 import { IconsScroll } from '../components/IconsScroll'
+import { ProjectsCards } from '../components/ProjectsCards'
 import freeLancerImg from '../../public/assets/img/servicesCards/shaking-hands.webp'
 import UIimg from '../../public/assets/img/servicesCards/UI.webp'
 import programacionImg from '../../public/assets/img/servicesCards/programation.webp'
 import figmaImg from '../../public/assets/icons/technology/figma.svg'
 import platzi from '../../public/assets/icons/logo/platzi.svg'
+import readlight from '../../public/assets/img/myself/read-light.webp'
+import readdark from '../../public/assets/img/myself/read-dark.webp'
+import facelight from '../../public/assets/img/myself/face-light.webp'
+import logoAzul from '../../public/assets/img/myself/logo-azul.webp'
+import facedark from '../../public/assets/img/myself/face-dark.webp'
+import logoRojo from '../../public/assets/img/myself/logo-rojo.webp'
+import vectorAzul from '../../public/assets/img/Vector-blue.webp'
+import vectorWhite from '../../public/assets/img/Vector-white.webp'
 import '../Style/animation.css'
-import { Link } from 'react-router-dom'
-import { ProjectsCards } from '../components/ProjectsCards'
 
 function Home() {
   const {
-    facelight,
-    logoRojo,
-    facedark,
-    vectorAzul,
-    vectorWhite,
     themes,
-    logoAzul,
     iconsTechnology,
-    readlight,
-    readdark,
     projectsData,
   } = usePortafolio()
 
@@ -155,7 +155,10 @@ function Home() {
             Mi objetivo es seguir alcanzando logros y superar mis límites en el
             mundo profesional
           </p>
-          <Link className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900 dark:bg-slate-800">
+          <Link
+            to="/certificates"
+            className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900 dark:bg-slate-800"
+          >
             <p className="z-10 self-center text-center font-merriweather text-lg font-normal text-slate-100">
               Certificados
             </p>

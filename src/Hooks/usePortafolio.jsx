@@ -1,19 +1,34 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
-// import  certificatesData  from '../../public/certificatesData.json'
+import certificatesData from '../../public/certificatesData.json'
 import projectsData from '../../public/projectsData.json'
 import iconsTechnology from '../../public/iconsTechnology.json'
-import readlight from '../../public/assets/img/myself/read-light.webp'
-import readdark from '../../public/assets/img/myself/read-dark.webp'
-import facelight from '../../public/assets/img/myself/face-light.webp'
-import logoAzul from '../../public/assets/img/myself/logo-azul.webp'
-import facedark from '../../public/assets/img/myself/face-dark.webp'
-import logoRojo from '../../public/assets/img/myself/logo-rojo.webp'
-import vectorAzul from '../../public/assets/img/Vector-blue.webp'
-import vectorWhite from '../../public/assets/img/Vector-white.webp'
+
 
 const PortafolioContext = createContext()
 
 function PortafolioPrivider({ children }) {
+  const dataInglish = certificatesData.filter((data) =>
+    data.certificatesId.includes('inglish'),
+  )
+  const dataTechnology = certificatesData.filter((data) =>
+    data.certificatesId.includes('technology'),
+  )
+  const dataDesign = certificatesData.filter((data) =>
+    data.certificatesId.includes('design'),
+  )
+  const dataFinance = certificatesData.filter((data) =>
+    data.certificatesId.includes('finance'),
+  )
+  const dataPlus = certificatesData.filter((data) =>
+    data.certificatesId.includes('plus'),
+  )
+
+  console.log(dataInglish)
+  console.log(dataTechnology)
+  console.log(dataDesign)
+  console.log(dataFinance)
+  console.log(dataPlus)
+
   const storedThemes = localStorage.getItem('theme')
 
   const [menuActive, setMenuActive] = useState(false)
@@ -43,16 +58,13 @@ function PortafolioPrivider({ children }) {
       value={{
         menuActive,
         themes,
-        facelight,
-        facedark,
-        logoAzul,
-        logoRojo,
-        readlight,
-        readdark,
-        vectorAzul,
-        vectorWhite,
         iconsTechnology,
         projectsData,
+        dataInglish,
+        dataTechnology,
+        dataDesign,
+        dataFinance,
+        dataPlus,
         setMenuActive,
         setTemes,
         toggleTheme,
