@@ -45,7 +45,7 @@ function Footer() {
       </section>
       <section className="mb-10 grid justify-items-center lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
         <img className="scal" src={logoDoble} alt="" />
-        <p className="font-carter pt-1 text-center lg:text-lg">
+        <p className="pt-1 text-center font-carter lg:text-lg">
           © 2023 Daniel
         </p>
       </section>

@@ -15,55 +15,72 @@ import { ProjectsCards } from '../components/ProjectsCards'
 function Home() {
   const {
     facelight,
-    vector,
+    logoRojo,
+    facedark,
+    vectorAzul,
+    vectorWhite,
+    themes,
     logoAzul,
     iconsTechnology,
     readlight,
+    readdark,
     projectsData,
   } = usePortafolio()
 
   return (
-    <main className="bg-slate-100">
+    <main className="bg-slate-100 dark:bg-slate-900">
       <section className="mb-6 grid">
         <figure className="justify-self-center">
-          <img className="absolute top-24" src={logoAzul} alt="" />
-          <img className="relative left-5" src={facelight} alt="" />
+          <img
+            className="absolute top-24"
+            src={themes ? logoRojo : logoAzul}
+            alt=""
+          />
+          <img
+            className="relative left-5"
+            src={themes ? facedark : facelight}
+            alt=""
+          />
         </figure>
-        <article className="relative  bg-slate-900">
-          <img className="absolute hidden" src={vector} alt="" />
-          <section className="relative z-10 px-5 py-3 ">
-            <h1 className=" text-center font-montserrat text-xl font-extrabold text-slate-100">
+        <article className="relative bg-slate-900 dark:bg-slate-100">
+          <img
+            className="absolute hidden"
+            src={themes ? vectorWhite : vectorAzul}
+            alt=""
+          />
+          <section className="relative z-10 px-5 py-3 text-slate-100 dark:text-slate-900">
+            <h1 className=" text-center font-montserrat text-xl font-extrabold  ">
               soy DANIEL Front-end/Designer UI
             </h1>
-            <p className=" py-4 font-merriweather text-base font-normal text-slate-100">
+            <p className=" py-4 font-merriweather text-base font-normal">
               Soy desarrollador front-end y diseñador UI. Mi objetivo es
               fusionar la estética con la funcionalidad para lograr resultados
               excepcionales. Contáctame y trabajemos juntos en un proyecto
               digital innovador.
             </p>
-            <section className="flex space-x-7">
-              <ImLinkedin2 className="h-12 w-12 fill-slate-100" />
-              <ImGithub className="h-12 w-12 fill-slate-100" />
-              <ImDownload2 className="scal h-12 w-12 fill-slate-100" />
+            <section className="flex space-x-7 fill-slate-100 dark:fill-slate-900">
+              <ImLinkedin2 className="h-12 w-12 " />
+              <ImGithub className="h-12 w-12 " />
+              <ImDownload2 className="scal h-12 w-12 " />
             </section>
           </section>
         </article>
       </section>
       <section>
-        <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900">
+        <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900 dark:text-slate-100">
           Herramientas
         </h1>
-        <section className=" w-[100vw] bg-zinc-200">
+        <section className=" w-[100vw] bg-zinc-200 dark:bg-zinc-950">
           <IconsScroll iconsTechnology={iconsTechnology} />
         </section>
       </section>
       <section>
-        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold">
+        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100">
           Servicios
         </h1>
-        <section className="grid justify-items-center gap-5">
-          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
+        <section className="grid justify-items-center gap-5 dark:text-slate-100">
+          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl ">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
               Freelancer
             </h1>
             <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
@@ -80,7 +97,7 @@ function Home() {
             />
           </article>
           <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
               Diseño UI
             </h1>
             <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
@@ -96,7 +113,7 @@ function Home() {
             <img className="absolute top-0 opacity-50" src={UIimg} alt="" />
           </article>
           <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
               Producto
             </h1>
             <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
@@ -120,10 +137,14 @@ function Home() {
         <article className="relative mb-5 h-[387px] w-80">
           <div className="absolute left-10 top-9 h-[280px] w-[243px] bg-gradient-to-br from-red-700 to-yellow-400"></div>
           <div className="absolute bottom-0 right-0 z-10 h-[287px] w-[249px] bg-gradient-to-br from-blue-700 to-teal-400"></div>
-          <img className=" absolute right-0 z-20" src={readlight} alt="" />
+          <img
+            className=" absolute right-0 z-20"
+            src={themes ? readdark : readlight}
+            alt=""
+          />
         </article>
-        <article className=" relative z-10 h-[400px] w-[353px] overflow-hidden rounded-2xl ">
-          <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
+        <article className=" relative z-10 h-[400px] w-[353px] overflow-hidden rounded-2xl dark:text-slate-100 ">
+          <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
             About
           </h1>
           <p className="relative z-10 px-5 py-4 font-merriweather text-base font-normal">
@@ -134,17 +155,17 @@ function Home() {
             Mi objetivo es seguir alcanzando logros y superar mis límites en el
             mundo profesional
           </p>
-          <Link className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900">
+          <Link className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900 dark:bg-slate-800">
             <p className="z-10 self-center text-center font-merriweather text-lg font-normal text-slate-100">
               Certificados
             </p>
             <img className=" absolute -top-10 left-20" src={platzi} alt="" />
           </Link>
-          <div className="absolute top-0 h-[431px] w-[353px] bg-slate-100 bg-opacity-50"></div>
+          <div className="absolute top-0 h-[431px] w-[353px] bg-slate-100 bg-opacity-50 dark:bg-slate-900"></div>
         </article>
       </section>
-      <section className='pb-10'>
-        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold">
+      <section className="pb-10">
+        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100">
           Proyectos
         </h1>
         <ProjectsCards projectsData={projectsData} />

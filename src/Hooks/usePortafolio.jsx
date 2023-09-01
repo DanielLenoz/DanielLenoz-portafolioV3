@@ -3,9 +3,13 @@ import React, { createContext, useContext, useEffect, useState } from 'react'
 import projectsData from '../../public/projectsData.json'
 import iconsTechnology from '../../public/iconsTechnology.json'
 import readlight from '../../public/assets/img/myself/read-light.webp'
+import readdark from '../../public/assets/img/myself/read-dark.webp'
 import facelight from '../../public/assets/img/myself/face-light.webp'
 import logoAzul from '../../public/assets/img/myself/logo-azul.webp'
-import vector from '../../public/assets/img/Vector-blue.webp'
+import facedark from '../../public/assets/img/myself/face-dark.webp'
+import logoRojo from '../../public/assets/img/myself/logo-rojo.webp'
+import vectorAzul from '../../public/assets/img/Vector-blue.webp'
+import vectorWhite from '../../public/assets/img/Vector-white.webp'
 
 const PortafolioContext = createContext()
 
@@ -40,10 +44,14 @@ function PortafolioPrivider({ children }) {
         menuActive,
         themes,
         facelight,
-        vector,
+        facedark,
         logoAzul,
-        iconsTechnology,
+        logoRojo,
         readlight,
+        readdark,
+        vectorAzul,
+        vectorWhite,
+        iconsTechnology,
         projectsData,
         setMenuActive,
         setTemes,

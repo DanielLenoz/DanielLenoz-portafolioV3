@@ -39,7 +39,7 @@ function ProjectsCards({ projectsData }) {
             </section>
           </article>
 
-          <section className="absolute bottom-0 z-10 h-auto w-[100vw] bg-slate-900">
+          <section className="absolute bottom-0 z-10 h-auto w-[100vw] bg-slate-900 dark:bg-slate-800">
             <IconsScroll iconsTechnology={data.icons} />
           </section>
         </section>
