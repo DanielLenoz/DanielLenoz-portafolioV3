@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconsScroll } from './IconsScroll'
 import { ImGithub } from 'react-icons/im'
-import { PiShareBold } from 'react-icons/pi'
+import { BsBoxArrowUpRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import '../Style/gradients.css'
 
@@ -34,7 +34,7 @@ function ProjectsCards({ projectsData }) {
                 <ImGithub className="h-12 w-12 fill-slate-100" />
               </Link>
               <Link>
-                <PiShareBold className="h-12 w-12 fill-slate-100" />
+                <BsBoxArrowUpRight className="h-12 w-12 fill-slate-100" />
               </Link>
             </section>
           </article>
