@@ -2,14 +2,25 @@ import React from 'react'
 import { RiShakeHandsFill } from 'react-icons/ri'
 import { ImLinkedin2, ImGithub, ImDownload2, ImSpinner9 } from 'react-icons/im'
 import { usePortafolio } from '../Hooks/usePortafolio'
+import { IconsScroll } from '../components/IconsScroll'
 import freeLancerImg from '../../public/assets/img/servicesCards/shaking-hands.webp'
 import UIimg from '../../public/assets/img/servicesCards/UI.webp'
 import programacionImg from '../../public/assets/img/servicesCards/programation.webp'
 import figmaImg from '../../public/assets/icons/technology/figma.svg'
+import platzi from '../../public/assets/icons/logo/platzi.svg'
 import '../Style/animation.css'
+import { Link } from 'react-router-dom'
+import { ProjectsCards } from '../components/ProjectsCards'
 
 function Home() {
-  const { facelight, vector, logoAzul, iconsTechnology } = usePortafolio()
+  const {
+    facelight,
+    vector,
+    logoAzul,
+    iconsTechnology,
+    readlight,
+    projectsData,
+  } = usePortafolio()
 
   return (
     <main className="bg-slate-100">
@@ -39,19 +50,11 @@ function Home() {
         </article>
       </section>
       <section>
-        <h1 className="mb-3 text-center font-montserrat text-xl font-bold text-slate-900">
+        <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900">
           Herramientas
         </h1>
         <section className=" w-[100vw] bg-zinc-200">
-          <article className="scroll flex justify-center space-x-4 ">
-            {iconsTechnology.map((icon) => (
-              <img
-                className="w-12"
-                key={icon.iconsTechnology}
-                src={icon.iconsTechnology}
-              />
-            ))}
-          </article>
+          <IconsScroll iconsTechnology={iconsTechnology} />
         </section>
       </section>
       <section>
@@ -59,11 +62,11 @@ function Home() {
           Servicios
         </h1>
         <section className="grid justify-items-center gap-5">
-          <article className=" relative h-[339px] w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-xl font-extrabold text-slate-100">
+          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
               Freelancer
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-lg font-normal">
+            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
               Mi enfoque es comprender a fondo las necesidades de mis clientes,
               traduciéndolas en soluciones impactantes mediante un diálogo
               efectivo. Busco llevar sus ideas a un nivel superior, superando
@@ -76,27 +79,27 @@ function Home() {
               alt=""
             />
           </article>
-          <article className=" relative h-[339px] w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-xl font-extrabold text-slate-100">
+          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
               Diseño UI
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-lg font-normal">
+            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
               Como diseñador UI, mi pasión es convertir ideas creativas en
               experiencias digitales cautivadoras y funcionales. Con Figma como
               herramienta principal, estoy listo para llevar el proyecto al
               siguiente nivel. ¡Hablemos!
             </p>
-            <section className="relative z-10 flex justify-center space-x-20">
+            <section className="relative z-10 mt-2 flex justify-center space-x-20">
               <img className=" h-16 w-16 fill-cyan-400" src={figmaImg} alt="" />
               <ImSpinner9 className="h-16 w-16 animate-spin fill-violet-600" />
             </section>
             <img className="absolute top-0 opacity-50" src={UIimg} alt="" />
           </article>
-          <article className=" relative h-[339px] w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-xl font-extrabold text-slate-100">
+          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
               Producto
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-lg font-normal">
+            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
               La creación de productos combina creatividad técnica y diseño para
               brindar experiencias interactivas excepcionales. Mis productos se
               destacan por su fluidez en la navegación, asegurando una
@@ -108,18 +111,43 @@ function Home() {
               alt=""
             />
             <section className="mt-3 w-[100vw] bg-slate-900">
-              <article className="scroll flex justify-center space-x-4 ">
-                {iconsTechnology.map((icon) => (
-                  <img
-                    className="w-12"
-                    key={icon.iconsTechnology}
-                    src={icon.iconsTechnology}
-                  />
-                ))}
-              </article>
+              <IconsScroll iconsTechnology={iconsTechnology} />
             </section>
           </article>
         </section>
+      </section>
+      <section className="grid justify-center justify-items-center py-5">
+        <article className="relative mb-5 h-[387px] w-80">
+          <div className="absolute left-10 top-9 h-[280px] w-[243px] bg-gradient-to-br from-red-700 to-yellow-400"></div>
+          <div className="absolute bottom-0 right-0 z-10 h-[287px] w-[249px] bg-gradient-to-br from-blue-700 to-teal-400"></div>
+          <img className=" absolute right-0 z-20" src={readlight} alt="" />
+        </article>
+        <article className=" relative z-10 h-[400px] w-[353px] overflow-hidden rounded-2xl ">
+          <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100">
+            About
+          </h1>
+          <p className="relative z-10 px-5 py-4 font-merriweather text-base font-normal">
+            Soy apasionado por el crecimiento profesional y la evolución
+            constante. Mi enfoque en el aprendizaje y la superación de desafíos
+            me ha llevado a expandir mis habilidades a lo largo de mi carrera.
+            Busco oportunidades para crecer y contribuir al éxito de mi equipo.
+            Mi objetivo es seguir alcanzando logros y superar mis límites en el
+            mundo profesional
+          </p>
+          <Link className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900">
+            <p className="z-10 self-center text-center font-merriweather text-lg font-normal text-slate-100">
+              Certificados
+            </p>
+            <img className=" absolute -top-10 left-20" src={platzi} alt="" />
+          </Link>
+          <div className="absolute top-0 h-[431px] w-[353px] bg-slate-100 bg-opacity-50"></div>
+        </article>
+      </section>
+      <section className='pb-10'>
+        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold">
+          Proyectos
+        </h1>
+        <ProjectsCards projectsData={projectsData} />
       </section>
     </main>
   )

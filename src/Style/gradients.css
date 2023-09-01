@@ -38,3 +38,7 @@
     rgba(255, 0, 0, 0) 100%
   );
 }
+
+.gradient-Card {
+  background: rgba(0, 0, 0, 0.51);
+}
