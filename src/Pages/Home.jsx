@@ -131,14 +131,14 @@ function Home() {
               src={programacionImg}
               alt=""
             />
-            <section className="mt-3 w-[100vw] bg-slate-900">
+            <section className="scrollCard mt-3 w-[100vw] bg-slate-900">
               <IconsScroll iconsTechnology={iconsTechnology} />
             </section>
           </article>
         </section>
       </section>
-      <section className="grid justify-center justify-items-center py-5">
-        <article className="relative mb-5 h-[387px] w-80">
+      <section className="grid items-center justify-center justify-items-center gap-10 px-5 py-5 md:flex">
+        <article className="relative h-[387px] w-80">
           <div className="absolute left-10 top-9 h-[280px] w-[243px] bg-gradient-to-br from-red-700 to-yellow-400"></div>
           <div className="absolute bottom-0 right-0 z-10 h-[287px] w-[249px] bg-gradient-to-br from-blue-700 to-teal-400"></div>
           <img
@@ -147,11 +147,11 @@ function Home() {
             alt=""
           />
         </article>
-        <article className=" relative z-10 h-[400px] w-[353px] overflow-hidden rounded-2xl dark:text-slate-100 ">
-          <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
+        <article className=" relative z-10 h-full w-auto overflow-hidden rounded-2xl dark:text-slate-100 md:w-1/2 ">
+          <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
             About
           </h1>
-          <p className="relative z-10 px-5 py-4 font-merriweather text-base font-normal">
+          <p className="relative z-10 px-5 py-4 font-merriweather text-base font-normal lg:text-lg">
             Soy apasionado por el crecimiento profesional y la evolución
             constante. Mi enfoque en el aprendizaje y la superación de desafíos
             me ha llevado a expandir mis habilidades a lo largo de mi carrera.
@@ -163,7 +163,7 @@ function Home() {
             to="/certificates"
             className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900 dark:bg-slate-800"
           >
-            <p className="z-10 self-center text-center font-merriweather text-lg font-normal text-slate-100">
+            <p className="z-10 self-center text-center font-merriweather text-lg font-normal text-slate-100 lg:text-lg">
               Certificados
             </p>
             <img className=" absolute -top-10 left-20" src={platzi} alt="" />
@@ -172,7 +172,7 @@ function Home() {
         </article>
       </section>
       <section className="pb-10">
-        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100">
+        <h1 className="my-4 text-center lg:text-3xl font-montserrat text-xl font-extrabold dark:text-slate-100">
           Proyectos
         </h1>
         <ProjectsCards projectsData={projectsData} />

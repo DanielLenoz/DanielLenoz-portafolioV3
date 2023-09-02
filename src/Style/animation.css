@@ -83,4 +83,21 @@
       transform: translateX(calc(15%));
     }
   }
+
+  .scrollCard .scroll2{
+    animation: scrollCard 4s ease-in-out infinite;
+  }
+    @keyframes scrollCard {
+      0% {
+        transform: translateX(0%);
+      }
+  
+      50% {
+        transform: translateX(calc(-60%));
+      }
+  
+      100% {
+        transform: translateX(calc(0%));
+      }
+    }
 }
