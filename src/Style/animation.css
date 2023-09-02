@@ -64,15 +64,23 @@
     transform: translateX(calc(60%));
   }
 }
-.scroll2 {
-  animation: scroll 10s ease-in-out infinite;
-}
 
-@keyframes scroll2 {
-  0% {
-    transform: translateX(0);
+@media (width >= 1024px) {
+  .scroll2 {
+    animation: scroll2 4s ease-in-out infinite;
   }
-  50% {
-    transform: translateX(calc(-30%));
+
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(15%);
+    }
+
+    50% {
+      transform: translateX(calc(-10%));
+    }
+
+    100% {
+      transform: translateX(calc(15%));
+    }
   }
 }

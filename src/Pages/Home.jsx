@@ -26,9 +26,9 @@ function Home() {
   return (
     <main className="bg-slate-100 dark:bg-slate-900">
       <section className="relative mb-6 grid overflow-hidden lg:grid-cols-5 lg:grid-rows-1">
-        <figure className=" relative justify-self-center lg:col-start-3 lg:right-6 lg:col-end-6 lg:row-start-1 lg:row-end-6 lg:w-full ">
+        <figure className=" relative justify-self-center lg:right-6 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-6 lg:w-full ">
           <img
-            className="absolute top-4 lg:w-3/4 lg:right-14 xl:w-[58%] lg:-left-[5%]"
+            className="absolute top-4 lg:-left-[5%] lg:right-14 lg:w-3/4 xl:w-[58%]"
             src={themes ? logoRojo : logoAzul}
             alt=""
           />
@@ -44,7 +44,7 @@ function Home() {
             src={themes ? vectorWhite : vectorAzul}
             alt=""
           />
-          <section className="grid gap-y-9 relative z-10 px-5 py-3 text-slate-100 dark:text-slate-900 ">
+          <section className="relative z-10 grid gap-y-9 px-5 py-3 text-slate-100 dark:text-slate-900 ">
             <h1 className=" text-center font-montserrat text-xl font-extrabold lg:text-start lg:text-3xl  ">
               soy DANIEL Front-end / Designer UI
             </h1>
@@ -63,7 +63,7 @@ function Home() {
         </article>
       </section>
       <section>
-        <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900 dark:text-slate-100">
+        <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900 dark:text-slate-100 lg:text-3xl">
           Herramientas
         </h1>
         <section className=" w-[100vw] bg-zinc-200 dark:bg-zinc-950">
@@ -71,15 +71,15 @@ function Home() {
         </section>
       </section>
       <section>
-        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100">
+        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl">
           Servicios
         </h1>
-        <section className="grid justify-items-center gap-5 dark:text-slate-100">
-          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl ">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
+        <section className="grid justify-items-center gap-5 dark:text-slate-100 md:grid-cols-2 xl:grid-cols-3">
+          <article className=" relative h-full  w-[356px] overflow-hidden rounded-2xl ">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
               Freelancer
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
+            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal lg:text-lg">
               Mi enfoque es comprender a fondo las necesidades de mis clientes,
               traduciéndolas en soluciones impactantes mediante un diálogo
               efectivo. Busco llevar sus ideas a un nivel superior, superando
@@ -87,39 +87,47 @@ function Home() {
             </p>
             <RiShakeHandsFill className="scal relative z-10 m-auto h-16 w-16 fill-cyan-400" />
             <img
-              className="absolute top-0 opacity-50"
+              className="absolute top-0 h-full w-full opacity-50"
               src={freeLancerImg}
               alt=""
             />
           </article>
-          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
+          <article className=" relative h-full  w-[356px] overflow-hidden rounded-2xl">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
               Diseño UI
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
+            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal lg:text-lg">
               Como diseñador UI, mi pasión es convertir ideas creativas en
               experiencias digitales cautivadoras y funcionales. Con Figma como
               herramienta principal, estoy listo para llevar el proyecto al
               siguiente nivel. ¡Hablemos!
             </p>
             <section className="relative z-10 mt-2 flex justify-center space-x-20">
-              <img className=" h-16 w-16 fill-cyan-400" src={figmaImg} alt="" />
+              <img
+                className=" h-16 w-16   fill-cyan-400"
+                src={figmaImg}
+                alt=""
+              />
               <ImSpinner9 className="h-16 w-16 animate-spin fill-violet-600" />
             </section>
-            <img className="absolute top-0 opacity-50" src={UIimg} alt="" />
+            <img
+              className="absolute top-0 h-full w-full opacity-50"
+              src={UIimg}
+              alt=""
+            />
           </article>
-          <article className=" relative h-72 w-[356px] overflow-hidden rounded-2xl">
-            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800">
+          <article className=" relative h-full  w-[356px] overflow-hidden rounded-2xl md:col-span-2 xl:col-auto">
+            <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
               Producto
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal">
+            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal lg:text-lg">
               La creación de productos combina creatividad técnica y diseño para
               brindar experiencias interactivas excepcionales. Mis productos se
               destacan por su fluidez en la navegación, asegurando una
               experiencia óptima para el usuario.
             </p>
             <img
-              className="absolute top-0 opacity-50"
+              className="absolute top-0 h-full w-full opacity-50"
               src={programacionImg}
               alt=""
             />
