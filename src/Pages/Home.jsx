@@ -21,38 +21,34 @@ import vectorWhite from '../../public/assets/img/Vector-white.webp'
 import '../Style/animation.css'
 
 function Home() {
-  const {
-    themes,
-    iconsTechnology,
-    projectsData,
-  } = usePortafolio()
+  const { themes, iconsTechnology, projectsData } = usePortafolio()
 
   return (
     <main className="bg-slate-100 dark:bg-slate-900">
-      <section className="mb-6 grid">
-        <figure className="justify-self-center">
+      <section className="relative mb-6 grid overflow-hidden lg:grid-cols-5 lg:grid-rows-1">
+        <figure className=" relative justify-self-center lg:col-start-3 lg:right-6 lg:col-end-6 lg:row-start-1 lg:row-end-6 lg:w-full ">
           <img
-            className="absolute top-24"
+            className="absolute top-4 lg:w-3/4 lg:right-14 xl:w-[58%] lg:-left-[5%]"
             src={themes ? logoRojo : logoAzul}
             alt=""
           />
           <img
-            className="relative left-5"
+            className="relative left-5 "
             src={themes ? facedark : facelight}
             alt=""
           />
         </figure>
-        <article className="relative bg-slate-900 dark:bg-slate-100">
+        <article className="grid items-center bg-slate-900 dark:bg-slate-100 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:bg-transparent lg:dark:bg-transparent">
           <img
-            className="absolute hidden"
+            className="absolute top-0 hidden h-full lg:block lg:w-1/2"
             src={themes ? vectorWhite : vectorAzul}
             alt=""
           />
-          <section className="relative z-10 px-5 py-3 text-slate-100 dark:text-slate-900">
-            <h1 className=" text-center font-montserrat text-xl font-extrabold  ">
-              soy DANIEL Front-end/Designer UI
+          <section className="grid gap-y-9 relative z-10 px-5 py-3 text-slate-100 dark:text-slate-900 ">
+            <h1 className=" text-center font-montserrat text-xl font-extrabold lg:text-start lg:text-3xl  ">
+              soy DANIEL Front-end / Designer UI
             </h1>
-            <p className=" py-4 font-merriweather text-base font-normal">
+            <p className="font-merriweather text-base font-normal lg:text-lg">
               Soy desarrollador front-end y diseñador UI. Mi objetivo es
               fusionar la estética con la funcionalidad para lograr resultados
               excepcionales. Contáctame y trabajemos juntos en un proyecto
