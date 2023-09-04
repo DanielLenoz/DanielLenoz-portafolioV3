@@ -60,7 +60,6 @@ function Menu() {
                     key={index}
                     routes={routes}
                     activeStyle={activeStyle}
-                    toggleMenu={toggleMenu}
                     onClick={() => (toggleMenu(), window.scrollTo(0, 0))}
                   />
                 )
@@ -74,13 +73,8 @@ function Menu() {
   )
 }
 
-function MuneList({ routes, activeStyle, onClick, toggleMenu }) {
-  const onClickProjects = (id) => {
-    window.scrollTo({
-      top: document.getElementById(id).offsetTop,
-      behavior: 'smooth',
-    })
-  }
+function MuneList({ routes, activeStyle, onClick}) {
+
   return (
     <li
       className="text-center font-normal dark:text-slate-100 "
@@ -93,7 +87,7 @@ function MuneList({ routes, activeStyle, onClick, toggleMenu }) {
             : 'up border-b-4 border-sky-500 border-transparent transition ease-in-out hover:border-b-4 hover:border-sky-500 dark:hover:border-b-4 dark:hover:border-orange-600'
         }
         to={routes.to}
-        onClick={(onClick, () => (onClickProjects(routes.id), toggleMenu()))}
+        onClick={onClick}
       >
         {routes.text}
       </NavLink>
@@ -106,24 +100,6 @@ const routes = [
     to: '/',
     Boolean: true,
     text: 'Home',
-  },
-  {
-    to: '/',
-    Boolean: false,
-    id: 'services',
-    text: 'Services',
-  },
-  {
-    to: '/',
-    Boolean: false,
-    id: 'about',
-    text: 'About',
-  },
-  {
-    to: '/',
-    Boolean: false,
-    id: 'projects',
-    text: 'Projects',
   },
   {
     to: '/Contact',
