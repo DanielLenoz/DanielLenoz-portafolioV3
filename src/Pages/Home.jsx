@@ -85,7 +85,7 @@ function Home() {
               efectivo. Busco llevar sus ideas a un nivel superior, superando
               expectativas
             </p>
-            <RiShakeHandsFill className="scal relative z-10 m-auto h-16 w-16 fill-cyan-400" />
+            <RiShakeHandsFill className="scal relative my-4  z-10 m-auto h-16 w-16 fill-cyan-400" />
             <img
               className="absolute top-0 h-full w-full opacity-50"
               src={freeLancerImg}
@@ -102,7 +102,7 @@ function Home() {
               herramienta principal, estoy listo para llevar el proyecto al
               siguiente nivel. ¡Hablemos!
             </p>
-            <section className="relative z-10 mt-2 flex justify-center space-x-20">
+            <section className="relative z-10 my-5 flex justify-center space-x-20">
               <img
                 className=" h-16 w-16   fill-cyan-400"
                 src={figmaImg}
@@ -120,7 +120,7 @@ function Home() {
             <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
               Producto
             </h1>
-            <p className="relative z-10 px-4 pt-4 font-merriweather text-base font-normal lg:text-lg">
+            <p className="relative z-10 px-4 py-4 font-merriweather text-base font-normal lg:text-lg">
               La creación de productos combina creatividad técnica y diseño para
               brindar experiencias interactivas excepcionales. Mis productos se
               destacan por su fluidez en la navegación, asegurando una
@@ -131,7 +131,7 @@ function Home() {
               src={programacionImg}
               alt=""
             />
-            <section className="scrollCard mt-3 w-[100vw] bg-slate-900">
+            <section className="scrollCard mt-3 w-[100vw] bg-slate-900 dark:bg-slate-800">
               <IconsScroll iconsTechnology={iconsTechnology} />
             </section>
           </article>
