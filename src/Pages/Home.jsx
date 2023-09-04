@@ -12,6 +12,7 @@ import logoRojo from '../../public/assets/img/myself/logo-rojo.webp'
 import vectorAzul from '../../public/assets/img/Vector-blue.webp'
 import vectorWhite from '../../public/assets/img/Vector-white.webp'
 import '../Style/animation.css'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const { themes, iconsTechnology, projectsData } = usePortafolio()
@@ -31,7 +32,7 @@ function Home() {
             alt="Daniel Rodriguez"
           />
         </figure>
-        <section className="spin relative col-start-4 col-end-6 row-start-1 hidden row-end-6 ml-24 h-[27rem] w-[28rem] lg:block ">
+        <section className="spin relative col-start-4 col-end-6 row-start-1 row-end-6 ml-24 hidden h-[27rem] w-[28rem] lg:block ">
           <div className="diamond scal spin sunlight absolute left-32 top-8 h-48 w-44"></div>
           <div className="diamond scal spin sunlight absolute left-0 top-48 h-48 w-44"></div>
           <div className="diamond scal spin sunlight absolute right-0  top-48 h-48 w-44"></div>
@@ -53,9 +54,15 @@ function Home() {
               digital innovador.
             </p>
             <section className="flex space-x-7 fill-slate-100 dark:fill-slate-900">
-              <ImLinkedin2 className="h-12 w-12 " />
-              <ImGithub className="h-12 w-12 " />
-              <ImDownload2 className="scal h-12 w-12 " />
+              <Link to="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/">
+                <ImLinkedin2 className="h-12 w-12 " />
+              </Link>
+              <Link to="https://github.com/DanielLenoz">
+                <ImGithub className="h-12 w-12 " />
+              </Link>
+              <Link>
+                <ImDownload2 className="scal h-12 w-12 " />
+              </Link>
             </section>
           </section>
         </article>

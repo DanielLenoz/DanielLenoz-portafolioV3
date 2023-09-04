@@ -22,10 +22,10 @@ function ProjectsCards({ projectsData }) {
               {data.text}
             </p>
             <section className="relative z-10 flex justify-center space-x-20 py-3">
-              <Link>
+              <Link to={data.repo}>
                 <ImGithub className="h-12 w-12 fill-slate-100" />
               </Link>
-              <Link>
+              <Link to={data.pages}>
                 <BsBoxArrowUpRight className="h-12 w-12 fill-slate-100" />
               </Link>
             </section>
