@@ -8,10 +8,12 @@
 
 .gradient-leer,
 .gradient-hablemos-azul {
-  background: linear-gradient(0deg,
-      #0029ff 0%,
-      #00a3ff 62.18%,
-      rgba(0, 255, 240, 0.71) 100%);
+  background: linear-gradient(
+    0deg,
+    #0029ff 0%,
+    #00a3ff 62.18%,
+    rgba(0, 255, 240, 0.71) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,9 +66,48 @@
   background: rgba(45, 51, 73, 0.49);
 }
 
-.slick-slider .slick-dots li.slick-active button:before, .slick-slider .slick-dots li button:before{
-  color:  #f12711;
+.slick-slider .slick-dots li.slick-active button:before,
+.slick-slider .slick-dots li button:before {
+  color: #f12711;
 }
-.dark .slick-slider .slick-dots li.slick-active button:before, .dark .slick-slider .slick-dots li button:before{
+.dark .slick-slider .slick-dots li.slick-active button:before,
+.dark .slick-slider .slick-dots li button:before {
   color: #00fff0;
+}
+
+.boxBlue {
+  width: 249px !important;
+  height: 287px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(
+    144deg,
+    #0641d8 0.89%,
+    rgba(12, 244, 189, 0.94) 100%
+  ) !important;
+}
+.boxRed {
+  width: 243px !important;
+  height: 280px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute !important;
+  left: 10px !important;
+  background: linear-gradient(
+    144deg,
+    #d80606 0.89%,
+    rgba(244, 221, 12, 0.94) 100%
+  ) !important;
+}
+.boxFace {
+  width: auto !important ;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }

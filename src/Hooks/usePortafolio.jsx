@@ -3,7 +3,6 @@ import certificatesData from '../../public/certificatesData.json'
 import projectsData from '../../public/projectsData.json'
 import iconsTechnology from '../../public/iconsTechnology.json'
 
-
 const PortafolioContext = createContext()
 
 function PortafolioPrivider({ children }) {
@@ -22,12 +21,6 @@ function PortafolioPrivider({ children }) {
   const dataPlus = certificatesData.filter((data) =>
     data.certificatesId.includes('plus'),
   )
-
-  console.log(dataInglish)
-  console.log(dataTechnology)
-  console.log(dataDesign)
-  console.log(dataFinance)
-  console.log(dataPlus)
 
   const storedThemes = localStorage.getItem('theme')
 
