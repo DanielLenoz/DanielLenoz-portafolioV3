@@ -76,7 +76,6 @@ function Menu() {
 
 function MuneList({ routes, activeStyle, onClick, toggleMenu }) {
   const onClickProjects = (id) => {
-    console.log(id)
     window.scrollTo({
       top: document.getElementById(id).offsetTop,
       behavior: 'smooth',
