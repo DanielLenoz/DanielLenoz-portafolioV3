@@ -13,7 +13,7 @@ function Menu() {
   const { menuActive, themes, toggleMenu, toggleTheme } = usePortafolio()
 
   return (
-    <header>
+    <header className='relative'>
       <nav className="relative z-10 flex items-center justify-between bg-slate-100 px-5 dark:bg-slate-900 ">
         <img
           src={themes ? logorojo : logoAzul}
@@ -50,28 +50,31 @@ function Menu() {
       </nav>
 
       {!!menuActive && (
-        <section className="relative z-10 grid h-screen justify-center bg-slate-100 dark:bg-slate-900">
-          <div className="diamond scal sunlight absolute h-44 w-40"></div>
-          <ul className="my-32 grid gap-1 font-carter text-2xl">
-            {routes.map((routes, index) => {
-              return (
-                <MuneList
-                  key={index}
-                  routes={routes}
-                  activeStyle={activeStyle}
-                  onClick={() => (toggleMenu(), window.scrollTo(0, 0))}
-                />
-              )
-            })}
-          </ul>
-          <div className="diamond scal sunlight absolute bottom-14 right-0 h-44 w-40"></div>
+        <section className=' absolute w-screen z-20 h-screen '>
+          <section className="relative z-10 grid h-screen justify-center bg-slate-100 dark:bg-slate-900">
+            <div className="diamond scal sunlight absolute h-44 w-40"></div>
+            <ul className="my-32 grid gap-1 font-carter text-2xl">
+              {routes.map((routes, index) => {
+                return (
+                  <MuneList
+                    key={index}
+                    routes={routes}
+                    activeStyle={activeStyle}
+                    toggleMenu={toggleMenu}
+                    onClick={() => (toggleMenu(), window.scrollTo(0, 0))}
+                  />
+                )
+              })}
+            </ul>
+            <div className="diamond scal sunlight absolute bottom-14 right-0 h-44 w-40"></div>
+          </section>
         </section>
       )}
     </header>
   )
 }
 
-function MuneList({ routes, activeStyle, onClick }) {
+function MuneList({ routes, activeStyle, onClick, toggleMenu }) {
   const onClickProjects = (id) => {
     console.log(id)
     window.scrollTo({
@@ -91,7 +94,7 @@ function MuneList({ routes, activeStyle, onClick }) {
             : 'up border-b-4 border-sky-500 border-transparent transition ease-in-out hover:border-b-4 hover:border-sky-500 dark:hover:border-b-4 dark:hover:border-orange-600'
         }
         to={routes.to}
-        onClick={(onClick, () => onClickProjects(routes.id))}
+        onClick={(onClick, () => (onClickProjects(routes.id), toggleMenu()))}
       >
         {routes.text}
       </NavLink>
