@@ -6,9 +6,9 @@ function Certificates() {
   const { dataInglish, dataTechnology, dataDesign, dataFinance, dataPlus } =
     usePortafolio()
   return (
-    <main className="bg-slate-100 dark:bg-slate-900 py-4">
+    <main className="bg-slate-100 dark:bg-slate-900 py-10">
       <section>
-        <p className="px-4 text-center font-merriweather text-base font-normal dark:text-slate-100">
+        <p className="px-4 lg:text-2xl text-center font-merriweather text-base font-bold lg:px-40 dark:text-slate-100">
           la sabiduría es importante pero mas es el entendimiento para entender
           sabiduría y conomiento, la voluntad es el principio de la creación
         </p>

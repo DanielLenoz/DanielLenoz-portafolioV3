@@ -10,23 +10,24 @@ function CertificateCarousel({ dataCertificates }) {
   const CustomPrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-0 top-1/2 z-10 h-[96%] -translate-y-1/2 transform  bg-gray-200 p-2 text-gray-600 transition duration-300 hover:text-gray-800"
+      className="absolute left-0 top-1/2 z-10 grid h-[96%] w-[3%] -translate-y-1/2 transform items-center justify-center bg-slate-700 bg-opacity-50 p-2  transition duration-300 hover:bg-slate-950 hover:bg-opacity-80"
     >
-      <MdOutlineArrowBackIosNew className="h-12 w-12" />
+      <MdOutlineArrowBackIosNew className=" h-12 w-12 fill-slate-100 " />
     </button>
   )
 
   const CustomNextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute right-0 top-1/2 h-[96%] -translate-y-1/2 transform bg-gray-200 p-2 text-gray-600 transition duration-300 hover:text-gray-800"
+      className="absolute right-0 top-1/2 grid h-[96%] w-[3%] -translate-y-1/2 transform items-center justify-center bg-slate-700 bg-opacity-50 p-2  transition duration-300 hover:bg-slate-950 hover:bg-opacity-80"
     >
-      <MdArrowForwardIos className="h-12 w-12" />
+      <MdArrowForwardIos className="h-12 w-12 fill-slate-100" />
     </button>
   )
 
   var settings = {
     infinite: false,
+    dots: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -54,6 +55,7 @@ function CertificateCarousel({ dataCertificates }) {
           arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],

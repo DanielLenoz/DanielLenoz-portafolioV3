@@ -63,3 +63,10 @@
 .gradient-contact {
   background: rgba(45, 51, 73, 0.49);
 }
+
+.slick-slider .slick-dots li.slick-active button:before, .slick-slider .slick-dots li button:before{
+  color:  #f12711;
+}
+.dark .slick-slider .slick-dots li.slick-active button:before, .dark .slick-slider .slick-dots li button:before{
+  color: #00fff0;
+}
