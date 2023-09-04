@@ -7,7 +7,10 @@ import readdark from '../../public/assets/img/myself/read-dark.webp'
 
 function About({ themes }) {
   return (
-    <section className="relative grid items-center justify-center justify-items-center gap-10 px-5 py-5 md:flex">
+    <section
+      className="relative grid items-center justify-center justify-items-center gap-10 px-5 py-5 md:flex"
+      id="about"
+    >
       <article className="relative z-10 h-[387px] w-80 duration-500 ease-in-out hover:scale-105">
         <Title className="boxRed">
           <div className=" h-full w-full"></div>
@@ -34,6 +37,7 @@ function About({ themes }) {
         <Link
           to="/certificates"
           className="relative z-10 m-auto grid h-16 w-72 overflow-hidden rounded-2xl bg-slate-900 dark:bg-slate-800"
+          onClick={() => window.scrollTo(0, 0)}
         >
           <p className="z-10 self-center text-center font-merriweather text-lg font-normal text-slate-100 lg:text-lg">
             Certificados

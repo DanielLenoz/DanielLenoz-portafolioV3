@@ -9,11 +9,11 @@ import { IconsScroll } from '../components/IconsScroll'
 
 function Services({ iconsTechnology }) {
   return (
-    <section>
+    <section id="services">
       <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl">
         Servicios
       </h1>
-      <section className="grid relative justify-items-center gap-5 dark:text-slate-100 md:grid-cols-2 xl:grid-cols-3">
+      <section className="relative grid justify-items-center gap-5 dark:text-slate-100 md:grid-cols-2 xl:grid-cols-3">
         <div className="diamond scal sunlight absolute -right-20  -top-24 h-48 w-44"></div>
         <div className="diamond scal sunlight absolute -left-20  -top-24 h-48 w-44"></div>
         <article className=" relative h-full  w-[356px] overflow-hidden rounded-2xl ">

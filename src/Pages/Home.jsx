@@ -77,8 +77,11 @@ function Home() {
       </section>
       <Services iconsTechnology={iconsTechnology} />
       <About themes={themes} />
-      <section className="pb-10">
-        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl">
+      <section className="pb-10" id='projects' >
+        <h1
+          className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl "
+          
+        >
           Proyectos
         </h1>
         <ProjectsCards projectsData={projectsData} />
