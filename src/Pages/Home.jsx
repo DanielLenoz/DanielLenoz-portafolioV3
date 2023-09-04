@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImLinkedin2, ImGithub, ImDownload2,} from 'react-icons/im'
+import { ImLinkedin2, ImGithub, ImDownload2 } from 'react-icons/im'
 import { usePortafolio } from '../Hooks/usePortafolio'
 import { IconsScroll } from '../components/IconsScroll'
 import { ProjectsCards } from '../components/ProjectsCards'
@@ -31,6 +31,11 @@ function Home() {
             alt="Daniel Rodriguez"
           />
         </figure>
+        <section className="spin relative col-start-4 col-end-6 row-start-1 hidden row-end-6 ml-24 h-[27rem] w-[28rem] lg:block ">
+          <div className="diamond scal spin sunlight absolute left-32 top-8 h-48 w-44"></div>
+          <div className="diamond scal spin sunlight absolute left-0 top-48 h-48 w-44"></div>
+          <div className="diamond scal spin sunlight absolute right-0  top-48 h-48 w-44"></div>
+        </section>
         <article className="grid items-center bg-slate-900 dark:bg-slate-100 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:bg-transparent lg:dark:bg-transparent">
           <img
             className="absolute top-0 hidden h-full lg:block lg:w-1/2"

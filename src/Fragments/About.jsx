@@ -7,8 +7,8 @@ import readdark from '../../public/assets/img/myself/read-dark.webp'
 
 function About({ themes }) {
   return (
-    <section className="grid items-center justify-center justify-items-center gap-10 px-5 py-5 md:flex">
-      <article className="relative h-[387px] ease-in-out duration-500 w-80 hover:scale-105">
+    <section className="relative grid items-center justify-center justify-items-center gap-10 px-5 py-5 md:flex">
+      <article className="relative z-10 h-[387px] w-80 duration-500 ease-in-out hover:scale-105">
         <Title className="boxRed">
           <div className=" h-full w-full"></div>
         </Title>
@@ -44,8 +44,13 @@ function About({ themes }) {
             alt="cerificados"
           />
         </Link>
-        <div className="absolute top-0 h-[431px] w-[353px] bg-slate-100 bg-opacity-50 dark:bg-slate-900"></div>
+        <div className="diamond scal sunlight absolute -left-20 top-20 hidden  h-48 w-44 md:block"></div>
+        <div className="diamond scal sunlight absolute -right-20 top-20 hidden  h-48 w-44 lg:block"></div>
       </article>
+      <div className="diamond scal sunlight absolute -bottom-16 -left-10 h-48 w-44"></div>
+      <div className="diamond scal sunlight absolute -left-10 top-0 hidden h-48 w-44 md:block"></div>
+      <div className="diamond scal sunlight absolute -right-10 bottom-52 h-48 w-44"></div>
+      <div className="diamond scal sunlight absolute -bottom-16 -right-10 hidden h-48 w-44 md:block"></div>
     </section>
   )
 }

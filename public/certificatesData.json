@@ -1,5 +1,30 @@
 [
   {
+    "certificatesImgSrc": "./assets/img/certificates/technology/react-navegacion-router.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de react router"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/react-manejo-estado.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de react manejo de estado"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/react-patrones-composicion.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de react patrones y composiciones"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/react-vite-tailwindcss.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de react vite tailwind"
+  },
+  {
+    "certificatesImgSrc": "./assets/img/certificates/technology/curso-react.webp",
+    "certificatesId": "technology",
+    "altDescription": "curso de react"
+  },
+  {
     "certificatesImgSrc": "./assets/img/certificates/technology/curso-vite-js.webp",
     "certificatesId": "technology",
     "altDescription": "curso de vite js"

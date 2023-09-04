@@ -101,3 +101,17 @@
       }
     }
 }
+
+
+.spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(0deg);
+  }
+  from{
+    transform: rotate(360deg);
+  }
+}
