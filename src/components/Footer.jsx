@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImLinkedin2, ImGithub } from 'react-icons/im'
 import { Link } from 'react-router-dom'
-import { MuneList, routes } from './Menu'
+import { MenuList, routes } from './Menu'
 import logoDoble from '../../public/assets/icons/logo/logo-doble.svg'
 import '../Style/animation.css'
 
@@ -17,7 +17,7 @@ function Footer() {
       <ul className="font-roboto my-16 grid gap-7 text-base lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:my-8 lg:gap-3 lg:text-lg">
         {routes.map((routes, index) => {
           return (
-            <MuneList
+            <MenuList
               key={index}
               routes={routes}
               activeStyle={activeStyle}

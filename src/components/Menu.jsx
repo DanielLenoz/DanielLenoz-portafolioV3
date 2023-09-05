@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri'
 import { usePortafolio } from '../Hooks/usePortafolio'
 import { NavLink } from 'react-router-dom'
@@ -13,7 +13,7 @@ function Menu() {
   const { menuActive, themes, toggleMenu, toggleTheme } = usePortafolio()
 
   return (
-    <header className='relative'>
+    <header className="relative">
       <nav className="relative z-10 flex items-center justify-between bg-slate-100 px-5 dark:bg-slate-900 ">
         <img
           src={themes ? logorojo : logoAzul}
@@ -38,7 +38,7 @@ function Menu() {
           <ul className="flex gap-7 font-carter text-2xl">
             {routes.map((routes, index) => {
               return (
-                <MuneList
+                <MenuList
                   key={index}
                   routes={routes}
                   activeStyle={activeStyle}
@@ -50,13 +50,13 @@ function Menu() {
       </nav>
 
       {!!menuActive && (
-        <section className=' absolute w-screen z-20 h-screen '>
+        <section className=" absolute z-20 h-screen w-screen ">
           <section className="relative z-10 grid h-screen justify-center bg-slate-100 dark:bg-slate-900">
             <div className="diamond scal sunlight absolute h-44 w-40"></div>
             <ul className="my-32 grid gap-1 font-carter text-2xl">
               {routes.map((routes, index) => {
                 return (
-                  <MuneList
+                  <MenuList
                     key={index}
                     routes={routes}
                     activeStyle={activeStyle}
@@ -73,7 +73,15 @@ function Menu() {
   )
 }
 
-function MuneList({ routes, activeStyle, onClick}) {
+function MenuList({ routes, activeStyle, onClick }) {
+  const onClickProjects = (id) => {
+    const element = document.getElementById(id)
+
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <li
@@ -87,7 +95,7 @@ function MuneList({ routes, activeStyle, onClick}) {
             : 'up border-b-4 border-sky-500 border-transparent transition ease-in-out hover:border-b-4 hover:border-sky-500 dark:hover:border-b-4 dark:hover:border-orange-600'
         }
         to={routes.to}
-        onClick={onClick}
+        onClick={() => (routes.to ? onClick() : onClickProjects(routes.id))}
       >
         {routes.text}
       </NavLink>
@@ -102,10 +110,25 @@ const routes = [
     text: 'Home',
   },
   {
+    Boolean: false,
+    id: 'services',
+    text: 'Services',
+  },
+  {
+    Boolean: false,
+    id: 'about',
+    text: 'About',
+  },
+  {
+    Boolean: false,
+    id: 'projects',
+    text: 'Projects',
+  },
+  {
     to: '/Contact',
     Boolean: true,
     text: 'Contact',
   },
 ]
 
-export { Menu, MuneList, routes }
+export { Menu, MenuList, routes }
