@@ -7,37 +7,46 @@ function Certificates() {
     usePortafolio()
   return (
     <main className="bg-slate-100 py-10 dark:bg-slate-900">
-      <section className='relative'>
-        <div className="diamond scal spin sunlight absolute right-0 lg:right-32  -top-20 h-48 w-44"></div>
-        <div className="diamond scal spin sunlight absolute left-0 lg:left-32  -top-10 h-48 w-44"></div>
-        <p className="px-4 text-center relative z-10 font-merriweather text-base font-bold dark:text-slate-100 lg:px-40 lg:text-2xl">
+      <section className="relative">
+        <div className="diamond scal spin sunlight absolute -top-20 right-0  h-48 w-44 lg:right-32"></div>
+        <div className="diamond scal spin sunlight absolute -top-10 left-0  h-48 w-44 lg:left-32"></div>
+        <p className="relative z-10 px-4 text-center font-merriweather text-base font-bold dark:text-slate-100 lg:px-40 lg:text-2xl">
           la sabiduría es importante pero mas es el entendimiento para entender
           sabiduría y conomiento, la voluntad es el principio de la creación
         </p>
       </section>
       <section className=" space-y-8 px-5 pt-10 font-montserrat text-xl font-extrabold dark:text-slate-100">
-        <article className="">
-          <h1>Cursos de Ingles</h1>
-          <CertificateCarousel dataCertificates={dataInglish} />
-        </article>
-        <article>
-          <h1>Cursos de Tecnologia</h1>
-          <CertificateCarousel dataCertificates={dataTechnology} />
-        </article>
-        <article>
-          <h1>Cursos de Diseñp UI</h1>
-          <CertificateCarousel dataCertificates={dataDesign} />
-        </article>
-        <article>
-          <h1>Cursos de Finanzas</h1>
-          <CertificateCarousel dataCertificates={dataFinance} />
-        </article>
-        <article>
-          <h1>Cursos Extras</h1>
-          <CertificateCarousel dataCertificates={dataPlus} />
-        </article>
+        <CertificateSection
+          title={'Cursos de Ingles'}
+          dataCertificates={dataInglish}
+        />
+        <CertificateSection
+          title={'Cursos de Tecnologia'}
+          dataCertificates={dataTechnology}
+        />
+        <CertificateSection
+          title={'Cursos de Diseño UI'}
+          dataCertificates={dataDesign}
+        />
+        <CertificateSection
+          title={'Cursos de Finanzas'}
+          dataCertificates={dataFinance}
+        />
+        <CertificateSection
+          title={'Cursos Extras'}
+          dataCertificates={dataPlus}
+        />
       </section>
     </main>
+  )
+}
+
+function CertificateSection({ title, dataCertificates }) {
+  return (
+    <article>
+      <h1>{title}</h1>
+      <CertificateCarousel dataCertificates={dataCertificates} />
+    </article>
   )
 }
 

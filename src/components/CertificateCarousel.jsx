@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
+import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 
 function CertificateCarousel({ dataCertificates }) {
   console.log(dataCertificates)

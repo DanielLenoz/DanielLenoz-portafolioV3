@@ -1,5 +1,6 @@
 import React from 'react'
 import { ImLinkedin2, ImGithub, ImDownload2 } from 'react-icons/im'
+import { Link } from 'react-router-dom'
 import { usePortafolio } from '../Hooks/usePortafolio'
 import { IconsScroll } from '../components/IconsScroll'
 import { ProjectsCards } from '../components/ProjectsCards'
@@ -12,7 +13,6 @@ import logoRojo from '../../public/assets/img/myself/logo-rojo.webp'
 import vectorAzul from '../../public/assets/img/Vector-blue.webp'
 import vectorWhite from '../../public/assets/img/Vector-white.webp'
 import '../Style/animation.css'
-import { Link } from 'react-router-dom'
 
 function Home() {
   const { themes, iconsTechnology, projectsData } = usePortafolio()
@@ -54,13 +54,25 @@ function Home() {
               digital innovador.
             </p>
             <section className="flex space-x-7 fill-slate-100 dark:fill-slate-900">
-              <Link to="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/">
+              <Link
+                to="https://www.linkedin.com/in/daniel-steven-rodriguez-verano-417472241/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImLinkedin2 className="h-12 w-12 " />
               </Link>
-              <Link to="https://github.com/DanielLenoz">
+              <Link
+                to="https://github.com/DanielLenoz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImGithub className="h-12 w-12 " />
               </Link>
-              <Link to="https://drive.google.com/file/d/1WBN436_Aplb9T1mCdRgKfon_k8OHy88z/view">
+              <Link
+                to="https://drive.google.com/file/d/1WBN436_Aplb9T1mCdRgKfon_k8OHy88z/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ImDownload2 className="scal h-12 w-12 " />
               </Link>
             </section>
@@ -71,7 +83,7 @@ function Home() {
         <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900 dark:text-slate-100 lg:text-3xl">
           Herramientas
         </h1>
-        <section className=" w-[100vw] bg-zinc-200 dark:bg-zinc-950">
+        <section className=" w-[100vw] bg-zinc-200 dark:bg-slate-800">
           <IconsScroll iconsTechnology={iconsTechnology} />
         </section>
       </section>
