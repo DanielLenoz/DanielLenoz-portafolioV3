@@ -60,7 +60,7 @@ function Home() {
               <Link to="https://github.com/DanielLenoz">
                 <ImGithub className="h-12 w-12 " />
               </Link>
-              <Link>
+              <Link to="https://drive.google.com/file/d/1WBN436_Aplb9T1mCdRgKfon_k8OHy88z/view">
                 <ImDownload2 className="scal h-12 w-12 " />
               </Link>
             </section>
@@ -77,11 +77,8 @@ function Home() {
       </section>
       <Services iconsTechnology={iconsTechnology} />
       <About themes={themes} />
-      <section className="pb-10" id='projects' >
-        <h1
-          className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl "
-          
-        >
+      <section className="pb-10" id="projects">
+        <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl ">
           Proyectos
         </h1>
         <ProjectsCards projectsData={projectsData} />
