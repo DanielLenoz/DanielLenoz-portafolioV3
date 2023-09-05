@@ -8,7 +8,7 @@ import '../Style/animation.css'
 
 function ProjectsCards({ projectsData }) {
   return (
-    <section className="grid justify-center gap-5 md:grid-flow-col ">
+    <section className="grid justify-center justify-items-center gap-5 md:grid-cols-2 xl:grid-cols-3">
       {projectsData.map((data, index) => (
         <section
           key={index}
