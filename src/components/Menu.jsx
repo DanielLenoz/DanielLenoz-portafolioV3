@@ -34,18 +34,32 @@ function Menu() {
           )}
         </section>
 
-        <section className="z-10 hidden bg-slate-100 dark:bg-slate-900 lg:grid">
+        <section className="relative z-10 hidden w-screen justify-center bg-slate-100 dark:bg-slate-900 lg:flex">
           <ul className="flex gap-7 font-carter text-2xl">
-            {routes.map((routes, index) => {
-              return (
-                <MenuList
-                  key={index}
-                  routes={routes}
-                  activeStyle={activeStyle}
-                />
-              )
-            })}
+            {routes
+              .map((routes, index) => {
+                return (
+                  <MenuList
+                    key={index}
+                    routes={routes}
+                    activeStyle={activeStyle}
+                  />
+                )
+              })
+              .slice(0, 4)}
           </ul>
+          <div className="absolute right-0 rounded-full bg-slate-900 px-5 py-1 text-center font-carter text-2xl font-normal text-slate-100 dark:bg-slate-100 dark:text-slate-900 ">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? activeStyle
+                  : 'up border-b-4 border-sky-500 border-transparent transition ease-in-out hover:border-b-4 hover:border-sky-500 dark:hover:border-b-4 dark:hover:border-orange-600'
+              }
+              to={'/contact'}
+            >
+              Contact
+            </NavLink>
+          </div>
         </section>
       </nav>
 
