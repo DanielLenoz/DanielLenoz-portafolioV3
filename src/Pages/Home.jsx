@@ -22,12 +22,12 @@ function Home() {
       <section className="relative mb-6 grid overflow-hidden lg:grid-cols-5 lg:grid-rows-1">
         <figure className=" relative justify-self-center lg:right-6 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-6 lg:w-full ">
           <img
-            className="absolute top-4 lg:-left-[5%] lg:right-14 lg:w-3/4 xl:w-[58%]"
+            className="absolute top-4 bg-cover bg-center bg-no-repeat lg:-left-[5%] lg:right-14 lg:w-3/4 xl:w-[58%]"
             src={themes ? logoRojo : logoAzul}
             alt="logo lenoz"
           />
           <img
-            className="relative left-5 "
+            className="relative left-5 bg-cover bg-center bg-no-repeat "
             src={themes ? facedark : facelight}
             alt="Daniel Rodriguez"
           />

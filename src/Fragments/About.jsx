@@ -11,17 +11,27 @@ function About({ themes }) {
       className="relative grid items-center justify-center justify-items-center gap-10 px-5 py-5 md:flex"
       id="about"
     >
-      <article className="relative z-10 h-[387px] w-80 duration-500 ease-in-out hover:scale-105">
-        <Title className="boxRed">
-          <div className=" h-full w-full"></div>
-        </Title>
-        <Title className="boxBlue">
-          <div className=" h-full w-full" data-tilt data-tilt-scale="1.1"></div>
-        </Title>
-        <Title className="boxFace">
-          <img src={themes ? readdark : readlight} alt="Daniel Rodriguez" />
-        </Title>
-      </article>
+      <Title className="noneTitle group">
+        <article className="relative z-10 h-[387px] w-80 duration-500 ease-in-out hover:scale-105">
+          <Title className="boxRed">
+            <div className=" h-full w-full"></div>
+          </Title>
+          <Title className="boxBlue">
+            <div
+              className=" h-full w-full"
+              data-tilt
+              data-tilt-scale="1.1"
+            ></div>
+          </Title>
+          <Title className="boxFace ">
+            <img
+              className="bg-cover bg-center bg-no-repeat duration-500 ease-in-out group-hover:scale-110"
+              src={themes ? readdark : readlight}
+              alt="Daniel Rodriguez"
+            />
+          </Title>
+        </article>
+      </Title>
       <article className=" relative z-10 h-full w-auto overflow-hidden rounded-2xl dark:text-slate-100 md:w-1/2 ">
         <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
           About

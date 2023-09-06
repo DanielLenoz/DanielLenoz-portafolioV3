@@ -1,91 +1,91 @@
 [
   {
     "img": "./assets/img/projects/blog.webp",
-    "title": "Blog",
-    "text": "Hola, soy Daniel, un desarrollador web. Bienvenido a mi página web de blogs personales, donde comparto mis pensamientos, ideas y experiencias con el mundo de la tecnologia y mi vida personal, ven y le un poco.",
+    "title": "Blog profesional | proyecto personal",
+    "text": "Soy Daniel, un desarrollador web. Bienvenido a mi blog personal donde comparto mis pensamientos y experiencias en tecnología y vida. ¡Lee un poco!",
     "repo":"https://github.com/DanielLenoz/DanielLenoz-blogV3",
     "pages":"https://daniellenoz.github.io/DanielLenoz-blogV3",
-    "icons": [
+    "technology": [
       {
-        "iconsTechnology": "./assets/icons/technology/html.svg"
+        "textTechnology": "HTML"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/css.svg"
+        "textTechnology": "CSS"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/js.svg"
+        "textTechnology": "javaScript"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/React.svg"
+        "textTechnology": "React"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/tailwind.svg"
+        "textTechnology": "Tailwind"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/vite.svg"
+        "textTechnology": "Vite"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/npm.svg"
+        "textTechnology": "npm"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/Nodejs.svg"
+        "textTechnology": "Nodejs"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/Git.svg"
+        "textTechnology": "Git"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/github.svg"
+        "textTechnology": "Github"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/vsCode.svg"
+        "textTechnology": "vsCode"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/figma.svg"
+        "textTechnology": "Figma"
       }
     ]
   },
   {
     "img": "./assets/img/projects/portafolio.webp",
-    "title": "Portafolio",
-    "text": "Como desarrollador web, mi portafolio es una herramienta esencial para mostrar mis habilidades y experiencia a posibles empleadores o clientes. Quiero que sea atractivo, fácil de usar y destaque mis mejores trabajos.",
+    "title": "Portafolio | proyecto personal",
+    "text": "Como desarrollador web, mi portafolio es crucial para exhibir mis habilidades. Debe ser atractivo y resaltar mis mejores trabajos.",
     "repo":"https://github.com/DanielLenoz/DanielLenoz-portafolioV3",
     "pages":"https://daniellenoz.github.io/DanielLenoz-portafolioV3",
-    "icons": [
-      {
-        "iconsTechnology": "./assets/icons/technology/html.svg"
+    "technology": [
+{
+        "textTechnology": "HTML"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/css.svg"
+        "textTechnology": "CSS"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/js.svg"
+        "textTechnology": "javaScript"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/React.svg"
+        "textTechnology": "React"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/tailwind.svg"
+        "textTechnology": "Tailwind"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/vite.svg"
+        "textTechnology": "Vite"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/npm.svg"
+        "textTechnology": "npm"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/Nodejs.svg"
+        "textTechnology": "Nodejs"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/Git.svg"
+        "textTechnology": "Git"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/github.svg"
+        "textTechnology": "Github"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/vsCode.svg"
+        "textTechnology": "vsCode"
       },
       {
-        "iconsTechnology": "./assets/icons/technology/figma.svg"
+        "textTechnology": "Figma"
       }
     ]
   }

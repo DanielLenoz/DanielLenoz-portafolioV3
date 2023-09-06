@@ -111,3 +111,14 @@
   background: transparent !important;
   box-shadow: none !important;
 }
+.noneTitle {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: initial !important;
+  border-radius: initial !important;
+  color: #f1f5f9 !important;
+  font-size: initial !important;
+  line-height: initial !important;
+  box-shadow: initial !important;
+}

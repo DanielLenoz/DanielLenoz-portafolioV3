@@ -13,7 +13,7 @@ function Services({ iconsTechnology }) {
       <h1 className="my-4 text-center font-montserrat text-xl font-extrabold dark:text-slate-100 lg:text-3xl">
         Servicios
       </h1>
-      <section className="relative grid justify-items-center gap-5 dark:text-slate-100 md:grid-cols-2 xl:grid-cols-3">
+      <section className="relative grid justify-center justify-items-center gap-5 px-5 dark:text-slate-100 md:grid-cols-2 xl:grid-cols-3">
         <div className="diamond scal sunlight absolute -right-20  -top-24 h-48 w-44"></div>
         <div className="diamond scal sunlight absolute -left-20  -top-24 h-48 w-44"></div>
         <ServiceSection
@@ -63,7 +63,9 @@ function Services({ iconsTechnology }) {
 
 function ServiceSection({ title, description, img, icon, colum }) {
   return (
-    <article className={` ${colum} relative  h-full w-[356px] overflow-hidden rounded-2xl `}>
+    <article
+      className={` ${colum} relative h-full  w-full overflow-hidden rounded-2xl `}
+    >
       <h1 className="relative z-10 bg-slate-900 py-2 text-center font-carter text-lg font-normal text-slate-100 dark:bg-slate-800 lg:text-2xl">
         {title}
       </h1>
