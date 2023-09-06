@@ -6,21 +6,10 @@ import iconsTechnology from '../../public/iconsTechnology.json'
 const PortafolioContext = createContext()
 
 function PortafolioPrivider({ children }) {
-  const dataInglish = certificatesData.filter((data) =>
-    data.certificatesId.includes('inglish'),
-  )
-  const dataTechnology = certificatesData.filter((data) =>
-    data.certificatesId.includes('technology'),
-  )
-  const dataDesign = certificatesData.filter((data) =>
-    data.certificatesId.includes('design'),
-  )
-  const dataFinance = certificatesData.filter((data) =>
-    data.certificatesId.includes('finance'),
-  )
-  const dataPlus = certificatesData.filter((data) =>
-    data.certificatesId.includes('plus'),
-  )
+  const filteredCertificates = (certificatesId) =>
+    certificatesData.filter((data) =>
+      data.certificatesId.includes(certificatesId),
+    )
 
   const storedThemes = localStorage.getItem('theme')
 
@@ -53,11 +42,11 @@ function PortafolioPrivider({ children }) {
         themes,
         iconsTechnology,
         projectsData,
-        dataInglish,
-        dataTechnology,
-        dataDesign,
-        dataFinance,
-        dataPlus,
+        dataInglish: filteredCertificates('inglish'),
+        dataTechnology: filteredCertificates('technology'),
+        dataDesign: filteredCertificates('design'),
+        dataFinance: filteredCertificates('finance'),
+        dataPlus: filteredCertificates('plus'),
         setMenuActive,
         setTemes,
         toggleTheme,
