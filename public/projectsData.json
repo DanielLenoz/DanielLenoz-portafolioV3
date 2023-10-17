@@ -88,5 +88,83 @@
         "textTechnology": "Figma"
       }
     ]
+  },
+  {
+    "img": "./assets/img/projects/fakeshoppi.webp",
+    "title": "fakeshoppi | proyecto personal",
+    "text": "Te presento Shoppi Fake, uno de mis proyectos de programación, potenciado por una sólida API. Cuenta con la mayoría de las funciones de una tienda convencional.",
+    "repo":"https://github.com/DanielLenoz/fake-shoppi",
+    "pages":"https://daniellenoz.github.io/fake-shoppi/",
+    "technology": [
+{
+        "textTechnology": "HTML"
+      },
+      {
+        "textTechnology": "CSS"
+      },
+      {
+        "textTechnology": "javaScript"
+      },
+      {
+        "textTechnology": "React"
+      },
+      {
+        "textTechnology": "Tailwind"
+      },
+      {
+        "textTechnology": "Vite"
+      },
+      {
+        "textTechnology": "npm"
+      },
+      {
+        "textTechnology": "Nodejs"
+      },
+      {
+        "textTechnology": "Git"
+      },
+      {
+        "textTechnology": "Github"
+      },
+      {
+        "textTechnology": "vsCode"
+      }
+    ]
+  },
+  {
+    "img": "./assets/img/projects/todoreact.webp",
+    "title": "Todo | proyecto personal",
+    "text": "descubre todo un proyecto sencillo, pero fascinante de aprender y en poner en práctica siendo programador Front-end",
+    "repo":"https://github.com/DanielLenoz/todo_react",
+    "pages":"https://daniellenoz.github.io/todo_react/",
+    "technology": [
+{
+        "textTechnology": "HTML"
+      },
+      {
+        "textTechnology": "CSS"
+      },
+      {
+        "textTechnology": "javaScript"
+      },
+      {
+        "textTechnology": "React"
+      },
+      {
+        "textTechnology": "npm"
+      },
+      {
+        "textTechnology": "Nodejs"
+      },
+      {
+        "textTechnology": "Git"
+      },
+      {
+        "textTechnology": "Github"
+      },
+      {
+        "textTechnology": "vsCode"
+      }
+    ]
   }
 ]

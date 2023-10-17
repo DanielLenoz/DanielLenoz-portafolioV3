@@ -67,7 +67,7 @@
 
 @media (width >= 1024px) {
   .scroll2 {
-    animation: scroll2 4s ease-in-out infinite;
+    animation: scroll2 5s ease-in-out infinite;
   }
 
   @keyframes scroll2 {
@@ -85,7 +85,7 @@
   }
 
   .scrollCard .scroll2{
-    animation: scrollCard 4s ease-in-out infinite;
+    animation: scrollCard 7s ease-in-out infinite;
   }
     @keyframes scrollCard {
       0% {

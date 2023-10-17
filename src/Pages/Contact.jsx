@@ -27,7 +27,7 @@ function Contact() {
           text={
             'Si aprecias mi trabajo en diseño y creación de productos, no dudes en contactarme a través de LinkedIn. Estaré encantado de hablar sobre cualquier proyecto que tengas en mente. ¡Espero tener la oportunidad de colaborar contigo!'
           }
-          textButtom={'Conéctate con Migo'}
+          textButtom={'Conéctate conmigo'}
         />
         <ContactLink
           icon={<ImGithub className=" h-20 w-20 fill-white lg:h-28 lg:w-28" />}
