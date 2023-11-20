@@ -1,5 +1,10 @@
 import React from 'react'
-import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri'
+import {
+  RiMenu3Fill,
+  RiCloseFill,
+  RiSunFill,
+  RiMoonClearFill,
+} from 'react-icons/ri'
 import { NavLink } from 'react-router-dom'
 import { usePortafolio } from '../Hooks/usePortafolio'
 import logoAzul from '../../public/assets/icons/logo/logo-azul.svg'
@@ -15,11 +20,20 @@ function Menu() {
   return (
     <header className="relative">
       <nav className="relative z-10 flex items-center justify-between bg-slate-100 px-5 dark:bg-slate-900 ">
-        <img
-          src={themes ? logorojo : logoAzul}
-          alt="mode change"
-          onClick={toggleTheme}
-        />
+        <section className="flex space-x-3">
+          <img src={themes ? logorojo : logoAzul} alt="mode change" />
+          {themes ? (
+            <RiMoonClearFill
+              className="h-12 w-12 fill-orange-600"
+              onClick={toggleTheme}
+            />
+          ) : (
+            <RiSunFill
+              className="h-12 w-12 fill-sky-600"
+              onClick={toggleTheme}
+            />
+          )}
+        </section>
         <section className="relative lg:hidden ">
           {!menuActive ? (
             <RiMenu3Fill
