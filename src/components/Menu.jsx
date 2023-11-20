@@ -20,7 +20,7 @@ function Menu() {
   return (
     <header className="relative">
       <nav className="relative z-10 flex items-center justify-between bg-slate-100 px-5 dark:bg-slate-900 ">
-        <section className="flex space-x-3">
+        <section className="flex items-center space-x-3">
           <img src={themes ? logorojo : logoAzul} alt="mode change" />
           {themes ? (
             <RiMoonClearFill
