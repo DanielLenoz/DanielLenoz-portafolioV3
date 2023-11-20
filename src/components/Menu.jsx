@@ -24,12 +24,12 @@ function Menu() {
           <img src={themes ? logorojo : logoAzul} alt="mode change" />
           {themes ? (
             <RiMoonClearFill
-              className="h-12 w-12 fill-orange-600"
+              className="fade-in h-12 w-12 cursor-pointer fill-orange-600"
               onClick={toggleTheme}
             />
           ) : (
             <RiSunFill
-              className="h-12 w-12 fill-sky-600"
+              className="fade-in h-12 w-12 cursor-pointer fill-sky-600"
               onClick={toggleTheme}
             />
           )}
@@ -37,12 +37,12 @@ function Menu() {
         <section className="relative lg:hidden ">
           {!menuActive ? (
             <RiMenu3Fill
-              className="absolute -bottom-4 right-0 h-8 w-8 dark:fill-slate-100 "
+              className=" absolute -bottom-4 right-0 h-8 w-8 dark:fill-slate-100"
               onClick={toggleMenu}
             />
           ) : (
             <RiCloseFill
-              className="absolute -bottom-4 right-0 h-8 w-8 dark:fill-slate-100 "
+              className="fade-in-menu absolute -bottom-4 right-0 h-8 w-8 dark:fill-slate-100"
               onClick={toggleMenu}
             />
           )}
