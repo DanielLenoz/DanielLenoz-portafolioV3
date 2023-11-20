@@ -83,8 +83,8 @@ function Home() {
         <h1 className="mb-3 text-center font-montserrat text-xl font-extrabold text-slate-900 dark:text-slate-100 lg:text-3xl">
           Herramientas
         </h1>
-        <section className=" w-[100vw] bg-zinc-200 dark:bg-slate-800">
-          <IconsScroll iconsTechnology={iconsTechnology} />
+        <section className=" w-[100vw] overflow-hidden bg-zinc-200 dark:bg-slate-800">
+          <IconsScroll iconsTechnology={iconsTechnology} animation={'jump'} />
         </section>
       </section>
       <Services iconsTechnology={iconsTechnology} />

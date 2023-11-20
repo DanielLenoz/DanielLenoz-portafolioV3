@@ -51,7 +51,7 @@ function Services({ iconsTechnology }) {
           }
           img={programacionImg}
           icon={
-            <section className="scrollCard relative z-10 mt-3 w-[100vw] bg-slate-900 dark:bg-slate-800">
+            <section className="scrollCard relative z-10 mt-3 bg-slate-900 dark:bg-slate-800">
               <IconsScroll iconsTechnology={iconsTechnology} />
             </section>
           }

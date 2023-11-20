@@ -55,63 +55,66 @@
 
 @keyframes scroll {
   0% {
-    transform: translateX(60%);
+    transform: translateX(80%);
   }
   50% {
-    transform: translateX(calc(-60%));
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(calc(60%));
+    transform: translateX(80%);
   }
 }
-
-@media (width >= 1024px) {
-  .scroll2 {
-    animation: scroll2 5s ease-in-out infinite;
-  }
-
-  @keyframes scroll2 {
-    0% {
-      transform: translateX(15%);
+@media (width >= 768px) {
+  .scroll.jump .w-12:nth-child(odd) {
+      animation: jump 3s ease-in-out infinite;
     }
-
-    50% {
-      transform: translateX(calc(-10%));
+  .scroll.jump .w-12:nth-child(even) {
+      animation: jump 3s ease-in-out 1s infinite;
     }
-
-    100% {
-      transform: translateX(calc(15%));
-    }
-  }
-
-  .scrollCard .scroll2{
-    animation: scrollCard 7s ease-in-out infinite;
-  }
-    @keyframes scrollCard {
+  
+    @keyframes jump {
       0% {
-        transform: translateX(0%);
+        transform: translateY(80%);
       }
   
       50% {
-        transform: translateX(calc(-60%));
+        transform: translateY(-10%);
       }
   
       100% {
-        transform: translateX(calc(0%));
+        transform: translateY(80%);
       }
     }
 }
 
+
+.scrollCard .scroll {
+  animation: scrollCard 10s ease-in-out infinite;
+}
+
+@keyframes scrollCard {
+  0% {
+      transform: translateX(80%);
+    }
+  
+    50% {
+      transform: translateX(-80%);
+    }
+  
+    100% {
+      transform: translateX(80%);
+    }
+}
 
 .spin {
   animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
-  to{
+  to {
     transform: rotate(0deg);
   }
-  from{
+  from {
     transform: rotate(360deg);
   }
 }
